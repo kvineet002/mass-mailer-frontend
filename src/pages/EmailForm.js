@@ -19,7 +19,7 @@ export default function EmailForm(){
   
     try {  
       console.log(email)
-      const response = await axios.post('http://localhost:5000/send-email', {
+      const response = await axios.post('https://mass-mailer-eight.vercel.app/send-email', {
         email:email,
         Message:Message
       }
